@@ -21,7 +21,7 @@ def RunSteps(api):
   src_cfg = api.gclient.make_config(CACHE_DIR=api.path['cache'].join('git'))
   soln = src_cfg.solutions.add()
   soln.name = 'src'
-  soln.url = 'https://chromium.googlesource.com/chromium/src.git'
+  soln.url = 'https://gitee.com/mirrors/chromium.git'
   src_cfg.repo_path_map.update({
       'https://chromium.googlesource.com/src': ('src', 'HEAD'),
       'https://chromium.googlesource.com/v8/v8': ('src/v8', 'HEAD'),
@@ -30,7 +30,7 @@ def RunSteps(api):
           'src/third_party/webrtc', 'HEAD'),
   })
   assert api.gclient.get_repo_path(
-      'https://chromium.googlesource.com/chromium/src.git',
+      'https://gitee.com/mirrors/chromium.git',
       gclient_config=src_cfg) == 'src'
   assert api.gclient.get_repo_path(
       'https://chromium.googlesource.com/chromium/src',

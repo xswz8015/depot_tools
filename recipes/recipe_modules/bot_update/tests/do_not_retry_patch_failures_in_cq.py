@@ -20,7 +20,7 @@ def RunSteps(api):
   src_cfg = api.gclient.make_config()
   soln = src_cfg.solutions.add()
   soln.name = 'src'
-  soln.url = 'https://chromium.googlesource.com/chromium/src.git'
+  soln.url = 'https://gitee.com/mirrors/chromium.git'
   try:
     bot_update_step = api.bot_update.ensure_checkout(
         patch=True, gclient_config=src_cfg)

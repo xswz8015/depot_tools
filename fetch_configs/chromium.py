@@ -15,7 +15,8 @@ class Chromium(config_util.Config):
 
   @staticmethod
   def fetch_spec(props):
-    url = 'https://chromium.googlesource.com/chromium/src.git'
+    #url = 'https://gitee.com/mirrors/chromium.git'
+    url = 'https://gitee.com/mirrors/chromium.git'
     solution = { 'name'   :'src',
                  'url'    : url,
                  'managed'   : False,

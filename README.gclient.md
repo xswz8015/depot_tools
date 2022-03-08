@@ -11,7 +11,7 @@ is a Python script that defines a list of `solutions` with the following format:
 
     solutions = [
       { "name"        : "src",
-        "url"         : "https://chromium.googlesource.com/chromium/src.git",
+        "url"         : "https://gitee.com/mirrors/chromium.git",
         "custom_deps" : {
           # To use the trunk of a component instead of what's in DEPS:
           #"component": "https://github.com/luci/luci-go",

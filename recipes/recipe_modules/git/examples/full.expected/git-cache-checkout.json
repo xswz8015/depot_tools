@@ -7,7 +7,7 @@
       "--path",
       "[START_DIR]/src",
       "--url",
-      "https://chromium.googlesource.com/chromium/src.git"
+      "https://gitee.com/mirrors/chromium.git"
     ],
     "name": "git setup"
   },
@@ -18,7 +18,7 @@
       "populate",
       "-c",
       "[CACHE]/git",
-      "https://chromium.googlesource.com/chromium/src.git"
+      "https://gitee.com/mirrors/chromium.git"
     ],
     "cwd": "[START_DIR]/src",
     "env": {
@@ -35,7 +35,7 @@
       "--quiet",
       "--cache-dir",
       "[CACHE]/git",
-      "https://chromium.googlesource.com/chromium/src.git"
+      "https://gitee.com/mirrors/chromium.git"
     ],
     "cwd": "[START_DIR]/src",
     "env": {

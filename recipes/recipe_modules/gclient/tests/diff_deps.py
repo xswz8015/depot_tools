@@ -22,7 +22,7 @@ def RunSteps(api):
 
   soln = src_cfg.solutions.add()
   soln.name = 'src'
-  soln.url = 'https://chromium.googlesource.com/chromium/src.git'
+  soln.url = 'https://gitee.com/mirrors/chromium.git'
   src_cfg.repo_path_map.update({
       'https://chromium.googlesource.com/src': ('src', 'HEAD'),
       'https://chromium.googlesource.com/v8/v8': ('src/v8', 'HEAD'),
